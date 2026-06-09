@@ -33,7 +33,7 @@ public class App {
                 guessNumber();
             else if (choice == 2)
                 wordle();
-            else if (choice == 5)
+            else if (choice == 3)
                 return;
             else
                 System.out.println("Please try again!"); userLevelChoose();
