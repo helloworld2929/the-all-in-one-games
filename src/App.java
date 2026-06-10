@@ -15,12 +15,9 @@ public class App {
         Scanner myScanner = new Scanner(System.in);    
         
         System.out.print(
-            """
-               1. Guess a number
-               2. Play the wordle
-               3. Exit
-            Type the number of your option in: """
-            ); int choice = myScanner.nextInt();
+            "    1. Guess a number\n    2. Play the wordle\n    3. Exit\n    \nType the number of your option in: "
+        ); int choice = myScanner.nextInt();
+            
             
             
             automatedMethodChoose(choice);
