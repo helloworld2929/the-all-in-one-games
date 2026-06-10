@@ -18,7 +18,7 @@ public class App {
             """
                1. Guess a number
                2. Play the wordle
-               3. Exite
+               3. Exit
             Type the number of your option in: """
             ); int choice = myScanner.nextInt();
             
