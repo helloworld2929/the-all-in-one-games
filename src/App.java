@@ -35,8 +35,10 @@ public class App {
                 wordle();
             else if (choice == 3)
                 return;
-            else
-                System.out.println("Please try again!"); userLevelChoose();
+            else {
+                System.out.println("Please try again!"); 
+                userLevelChoose();
+            }
     }
     
     
@@ -58,7 +60,7 @@ public class App {
 
        if (guess == genNum) {
                 System.out.printf("Congratulations! You got it correct in %d attempts!", attempts);
-                System.out.println("");
+                System.out.println(""); userLevelChoose();
             } else if (guess > genNum) {
                 System.out.println("Too high! Try a lower number.");
             } else {
@@ -83,7 +85,7 @@ public class App {
         String colorNormal = "\u001B[0m";
 
         for (int i = 1; i <= maxAttempts; i++) {
-            System.out.printf("Attempt %d/%d. Enter a word that is 5 words: ", i, maxAttempts);
+            System.out.printf("Attempt %d/%d. Enter a word that is 5 letters: ", i, maxAttempts);
             String guess = myScanner.nextLine().trim().toUpperCase();
 
             if (guess.length() != 5 || !guess.matches("[A-Z]+")) {
