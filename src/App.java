@@ -29,13 +29,15 @@ public class App {
     
         public static void automatedMethodChoose(int choice) {
         //TOdo, create the methods that i have mentioned 
-         if (choice == 1) 
+         if (choice == 1) {
                 guessNumber();
-            else if (choice == 2)
+                userLevelChoose();
+         } else if (choice == 2) {
                 wordle();
-            else if (choice == 3)
+                userLevelChoose();
+         } else if (choice == 3){
                 return;
-            else {
+         }  else {
                 System.out.println("Please try again!"); 
                 userLevelChoose();
             }
